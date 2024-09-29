@@ -3,6 +3,8 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <sys/types.h>
+#include <string.h>
 
 /* Structure for stack nodes */
 typedef struct stack_s
