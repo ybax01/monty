@@ -4,6 +4,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+ * getline - you know
+ * @lineptr: char
+ * @n: n
+ * @stream: you know
+ * Return: yeah
+ */
 ssize_t getline(char **lineptr, size_t *n, FILE *stream)
 {
 	char *bufptr = NULL;
