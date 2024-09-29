@@ -1,7 +1,5 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 #include "monty.h"
+#include <string.h>
 
 /**
  * main - Monty bytecode interpreter
@@ -17,6 +15,7 @@ int main(int argc, char **argv)
 	char *line = NULL;
 	size_t len = 0;
 	unsigned int line_number = 0;
+	char *opcode, *arg;
 
 	if (argc != 2)
 	{
@@ -34,8 +33,8 @@ int main(int argc, char **argv)
 	while (getline(&line, &len, file) != -1)
 	{
 		line_number++;
-		char *opcode = strtok(line, " \n\t");
-		char *arg = strtok(NULL, " \n\t");
+		opcode = strtok(line, " \n\t");
+		arg = strtok(NULL, " \n\t");
 
 		if (opcode != NULL && opcode[0] != '#')  /* Ignore comments and empty lines */
 		{
