@@ -29,5 +29,8 @@ void pall(stack_t **stack, unsigned int line_number, char *arg);
 void free_stack(stack_t *stack);
 void execute_opcode(char *opcode, stack_t **stack, unsigned int line_number, char *arg);
 int isnumber(char *str);
+void pint(stack_t **stack, unsigned int line_number);
+
+
 
 #endif /* MONTY_H */
