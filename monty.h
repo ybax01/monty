@@ -28,6 +28,6 @@ void push(stack_t **stack, unsigned int line_number, char *arg);
 void pall(stack_t **stack, unsigned int line_number, char *arg);
 void free_stack(stack_t *stack);
 void execute_opcode(char *opcode, stack_t **stack, unsigned int line_number, char *arg);
-int _is_number(char *str);
+int isnumber(char *str);
 
 #endif /* MONTY_H */

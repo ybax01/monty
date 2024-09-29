@@ -13,7 +13,7 @@ void push(stack_t **stack, unsigned int line_number, char *arg)
 	stack_t *new_node;
 	int value;
 
-	if (arg == NULL || !_is_number(arg))
+	if (arg == NULL || !isnumber(arg))
 	{
 		fprintf(stderr, "L%u: usage: push integer\n", line_number);
 		exit(EXIT_FAILURE);
