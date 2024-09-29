@@ -36,7 +36,7 @@ int main(int argc, char **argv)
 		opcode = strtok(line, " \n\t");
 		arg = strtok(NULL, " \n\t");
 
-		if (opcode != NULL && opcode[0] != '#')  /* Ignore comments and empty lines */
+		if (opcode != NULL && opcode[0] != '#')
 		{
 			execute_opcode(opcode, &stack, line_number, arg);
 		}
